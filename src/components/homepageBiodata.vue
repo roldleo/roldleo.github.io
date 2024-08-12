@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center justify-center">
         <div class="h-40 w-full flex items-center justify-center my-1">
           <img
-            src="url_to_your_image"
+            src="../assets/blackScreen.png"
             alt="Profile Picture"
             class="rounded-full h-40 w-40 object-cover bg-black"
           />

@@ -90,7 +90,7 @@ export default createStore({
       },
       {
         id: 2,
-        title: "CodeIgniter 4",
+        title: "CodeIgniter",
         image: require("./assets/ci-logo.png"),
       },
       {

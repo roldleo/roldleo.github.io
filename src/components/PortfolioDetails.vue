@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto px-10">
     <h1 class="text-6xl lg:ms-10 font-bold mb-2 pt-16">
       {{ portfolioItem.title }}
     </h1>
@@ -15,7 +15,9 @@
         <p class="mt-3 text-justify" v-html="portfolioItem.fullDescription"></p>
         <div v-if="toolsUsed.length > 0" class="mt-4 mb-4">
           <h3 class="text-2xl font-semibold">Tools Used:</h3>
-          <div class="flex space-x-4 mt-2">
+          <div
+            class="space-x-4 mt-2 grid lg:grid-cols-4 md:grid-cols-3 gap-4 my-4 grid-cols-2 justify-around w-full"
+          >
             <div
               v-for="tool in toolsUsed"
               :key="tool.id"

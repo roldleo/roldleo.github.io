@@ -30,7 +30,7 @@
           </svg>
         </a>
         <a
-          href="https://www.instagram.com/yourprofile"
+          href="https://www.instagram.com/haroldpanjaitan03"
           class="text-gray-400 hover:text-white"
         >
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

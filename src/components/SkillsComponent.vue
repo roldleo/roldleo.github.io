@@ -5,7 +5,7 @@
       <div class="flex flex-wrap">
         <div
           v-if="hardSkillsUsed.length > 0"
-          class="w-full grid grid-cols-4 gap-4 mt-4 mb-4 justify-around"
+          class="w-full grid lg:grid-cols-4 md:grid-cols-3 gap-4 my-4 grid-cols-2 justify-around"
         >
           <div
             v-for="tool in hardSkillsUsed"

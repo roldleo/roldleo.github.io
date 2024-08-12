@@ -3,7 +3,10 @@
     class="fixed top-0 left-0 w-full bg-opacity-30 backdrop-blur-sm z-50 p-4"
   >
     <div class="container mx-auto flex justify-between items-center">
-      <div class="text-black text-lg font-bold"></div>
+      <div
+        class="text-black text-lg font-bold md:flex-1 md:text-center hidden md:block"
+      ></div>
+
       <button
         @click="toggleMenu"
         class="text-black md:hidden focus:outline-none"
@@ -24,29 +27,35 @@
         </svg>
       </button>
       <div
-        :class="{ block: menuOpen, hidden: !menuOpen }"
-        class="hidden md:flex flex-col md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0 md:space-x-4"
+        :class="{
+          block: menuOpen,
+          hidden: !menuOpen,
+        }"
+        class="md:flex flex-col md:flex-row md:items-center md:justify-center space-y-4 md:space-y-0 md:space-x-4"
       >
         <router-link
           to="/"
           exact-active-class="active"
           class="text-gray-500 hover:text-black transition duration-300"
-          >Home</router-link
         >
+          Home
+        </router-link>
         <router-link
           to="/portfolio"
           exact-active-class="active"
           class="text-gray-500 hover:text-black transition duration-300"
-          >Portfolio</router-link
         >
+          Portfolio
+        </router-link>
         <!-- <router-link
           to="/contact"
           exact-active-class="active"
           class="text-gray-500 hover:text-black transition duration-300"
-          >Contact</router-link
-        > -->
+        >
+          Contact
+        </router-link> -->
       </div>
-      <div></div>
+      <div class="hidden md:block flex-1"></div>
     </div>
   </nav>
 </template>
