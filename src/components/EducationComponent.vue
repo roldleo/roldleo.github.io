@@ -1,24 +1,24 @@
 <template>
-  <div class="mx-auto p-10">
-    <div class="px-12">
+  <div v-intersection="'animate-slideIn'" class="mx-auto p-10">
+    <div class="lg:px-12">
       <h3 class="text-xl font-semibold mb-2">Education</h3>
 
       <div
         v-for="item in educationItem"
         :key="item.id"
-        class="items-center mb-1 mx-3 px-3 py-1 rounded text-lg"
+        class="items-center mb-1 mx-3 px-3 py-1 rounded text-lg transition-transform duration-1000 ease-out transform"
       >
-        <div class="ml-2 flex justify-between">
-          <div class="">
+        <div class="md:ml-2 md:flex justify-between">
+          <div class="pb-4 md:pb-0">
             <p class="font-semibold">{{ item.name }}</p>
-            <div class="flex text-sm">
+            <div class="md:flex text-sm">
               <p class="me-2">{{ item.jurusan }}</p>
-              <p class="">|</p>
-              <p class="ms-2">{{ item.gpa }} GPA</p>
+              <p class="hidden md:block">|</p>
+              <p class="md:ms-2">{{ item.gpa }} GPA</p>
             </div>
           </div>
           <div>
-            <p>{{ item.location }}</p>
+            <p class="font-semibold">{{ item.location }}</p>
             <p class="text-sm italic">{{ item.dateRange }}</p>
           </div>
         </div>
@@ -42,7 +42,5 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  max-width: 800px;
-}
+/* Add any scoped styles if needed */
 </style>

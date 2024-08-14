@@ -113,9 +113,8 @@ export default createStore({
     workExperiences: [
       {
         id: 1,
-        name: "PT. Cladtek bi-Metal Manufacturing Batam",
-        posisi: "Mobile Developer",
-        status: "Internship",
+        name: "Cladtek bi-Metal Manufacturing Batam",
+        posisi: "Mobile Developer Internship",
         dateRange: "July 2023 - September 2023",
       },
       {

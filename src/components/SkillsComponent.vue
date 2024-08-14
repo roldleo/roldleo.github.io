@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-auto p-10">
-    <div class="px-12">
+  <div class="mx-auto p-10" v-intersection="'animate-slideIn'">
+    <div class="md:px-12">
       <h3 class="text-xl font-semibold mb-2">Skills</h3>
       <div class="flex flex-wrap">
         <div
@@ -12,8 +12,12 @@
             :key="tool.id"
             class="flex items-center mb-1 mx-3 px-3 py-1 rounded text-lg"
           >
-            <img :src="tool.image" alt="" class="h-10 object-cover w-10" />
-            <span class="ml-2">{{ tool.title }}</span>
+            <img
+              :src="tool.image"
+              alt=""
+              class="h-10 w-10 object-cover object-center transform"
+            />
+            <span class="ml-2 text-sm">{{ tool.title }}</span>
           </div>
         </div>
       </div>

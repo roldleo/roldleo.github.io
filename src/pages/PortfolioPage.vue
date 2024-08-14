@@ -1,5 +1,8 @@
 <template>
-  <div class="container mx-auto pt-16 px-4 h-screen">
+  <div
+    class="container mx-auto pt-16 px-4 h-screen"
+    v-intersection="'animate-slideIn'"
+  >
     <h1 class="text-4xl font-bold">My Project</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
       <div

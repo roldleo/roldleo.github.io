@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-10">
+  <div class="container mx-auto px-10" v-intersection="'animate-slideIn'">
     <h1 class="text-6xl lg:ms-10 font-bold mb-2 pt-16">
       {{ portfolioItem.title }}
     </h1>
